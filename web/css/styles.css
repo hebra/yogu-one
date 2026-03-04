@@ -113,12 +113,24 @@ h1 {
   margin: 0 auto;
 }
 
+/* Apps Section */
+.apps-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.apps-section h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+}
+
 /* Apps Grid */
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-2xl);
 }
 
 .app-card {
