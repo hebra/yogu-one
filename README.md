@@ -4,9 +4,33 @@ Yogu.one is the primary landing page and central hub for the Yogu.one ecosystem.
 
 ## Ecosystem Tools
 
-- **[Fukuri](https://fukuri.yogu.one)**: A clean and powerful compound interest calculator with regular contribution support and visual growth charts.
+### Software Development
+
 - **[Enkoda](https://enkoda.yogu.one)**: A high-performance utility for data encoding and decoding.
+- **[Tokun](https://tokun.yogu.one)**: A lightweight, privacy-focused JWT debugger for secure token analysis.
+
+### Financial Tools
+
+- **[Fukuri](https://fukuri.yogu.one)**: A clean and powerful compound interest calculator with regular contribution support and visual growth charts.
 - **[Shouhizei](https://shouhizei.yogu.one)**: A straightforward Japanese consumption tax (GST/VAT) calculator.
+
+## Architecture
+
+The following diagram illustrates the relationship between the main landing page and the various ecosystem tools hosted on subdomains:
+
+```mermaid
+graph TD
+    Y[Yogu.one Landing Page] --> SD[Software Development]
+    Y --> FT[Financial Tools]
+    
+    SD --> E[Enkoda]
+    SD --> T[Tokun]
+    
+    FT --> F[Fukuri]
+    FT --> S[Shouhizei]
+    
+    style Y fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ## Project Philosophy
 

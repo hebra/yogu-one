@@ -1,7 +1,7 @@
 # Agent Guidelines: yogu-one (Landing Page for Yogu.one)
 
 ## Project Overview
-yogu-one is the primary landing page and parent project website for the different yogu.one applications. It serves as a central hub for users to discover and navigate to specialized tools hosted on subdomains (e.g., `fukuri.yogu.one`, `enkoda.yogu.one`, `shouhizei.yogu.one`). The project prioritizes simplicity, performance, and accessibility.
+yogu-one is the primary landing page and parent project website for the different yogu.one applications. It serves as a central hub for users to discover and navigate to specialized tools hosted on subdomains (e.g., `fukuri.yogu.one`, `enkoda.yogu.one`, `shouhizei.yogu.one`, `tokun.yogu.one`). The project prioritizes simplicity, performance, and accessibility.
 
 ## Tech Stack
 ### Core Technologies (Mandatory)
@@ -35,11 +35,13 @@ yogu-one/
 │       └── apps/          # Icons/screenshots for linked applications
 │           ├── fukuri.png
 │           ├── enkoda.png
-│           └── shouhizei.png
+│           ├── shouhizei.png
+│           └── tokun.png
 ├── AGENTS.md              # Project guidelines for AI agents
 ├── LICENSE                # GPL v3 Licence
 ├── Makefile               # Task automation
 ├── README.md              # Documentation for developers
+├── apps.json              # List of ecosystem applications and URLs
 └── serve.ts               # Deno development server
 ```
 
@@ -65,7 +67,7 @@ yogu-one/
 ### Dos
 - ✅ **Use semantic HTML5**: Always use `<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`, etc.
 - ✅ **Mobile-first CSS**: Use Grid and Flexbox for responsive app card layouts.
-- ✅ **Consistency**: Ensure the design language (colours, typography) matches the sub-projects (`fukuri`, `enkoda`, `shouhizei`).
+- ✅ **Consistency**: Ensure the design language (colours, typography) matches the sub-projects (`fukuri`, `enkoda`, `shouhizei`, `tokun`).
 - ✅ **Progressive Enhancement**: Ensure the site is functional and readable even if JavaScript is disabled.
 
 ### Don'ts
@@ -74,13 +76,33 @@ yogu-one/
 - ❌ **No npm/Node**: Avoid `package.json` or `node_modules`. Stick to Deno for dev tasks.
 - ❌ **No Absolute Paths**: Use relative paths for all internal assets and scripts.
 
+## Agent Mode-Specific Instructions
+
+### [CODE] Mode
+- **Performance**: Maintain <50KB total page weight.
+- **Accessibility**: Ensure WCAG AA compliance (ARIA labels, keyboard focus).
+- **Updates**: Keep `apps.json` synced with `index.html` card entries.
+
+### [ADVANCED_CHAT] Mode
+- Use for discussing the vanilla JS architecture or cross-subdomain design consistency.
+- Reference `web/css/variables.css` for any design-related queries.
+
+### [SETUP] Mode
+- Use `Makefile` for `fmt`, `lint`, and `serve` tasks.
+- Deno is the required dev environment.
+
 ## Changelog
+### v1.1 (2026-03-05)
+- Added `apps.json` and `tokun.png` to architecture.
+- Included mode-specific instructions for agents.
+- Synchronised sub-project list in overview.
+
 ### v1.0 (2026-03-04)
 - Initial guidelines for the `yogu-one` landing page.
 - Established standards based on existing `fukuri`, `enkoda`, and `shouhizei` projects.
 - Defined tech stack (Pure HTML/CSS/JS) and architecture.
 
 ---
-**Last Updated**: 2026-03-04
+**Last Updated**: 2026-03-05
 **Document Owner**: Project Team
 **Review Frequency**: As needed based on project evolution
