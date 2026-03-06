@@ -8,6 +8,7 @@ Yogu.one is the primary landing page and central hub for the Yogu.one ecosystem.
 
 - **[Enkoda](https://enkoda.yogu.one)**: A high-performance utility for data encoding and decoding.
 - **[Tokun](https://tokun.yogu.one)**: A lightweight, privacy-focused JWT debugger for secure token analysis.
+- **[Konbata](https://konbata.yogu.one/)**: A fast, privacy-focused text-data converter for JSON, YAML, and XML.
 
 ### Financial Tools
 
@@ -25,6 +26,7 @@ graph TD
     
     SD --> E[Enkoda]
     SD --> T[Tokun]
+    SD --> K[Konbata]
     
     FT --> F[Fukuri]
     FT --> S[Shouhizei]

@@ -1,7 +1,7 @@
 # Agent Guidelines: yogu-one (Landing Page for Yogu.one)
 
 ## Project Overview
-yogu-one is the primary landing page and parent project website for the different yogu.one applications. It serves as a central hub for users to discover and navigate to specialized tools hosted on subdomains (e.g., `fukuri.yogu.one`, `enkoda.yogu.one`, `shouhizei.yogu.one`, `tokun.yogu.one`). The project prioritizes simplicity, performance, and accessibility.
+yogu-one is the primary landing page and parent project website for the different yogu.one applications. It serves as a central hub for users to discover and navigate to specialized tools hosted on subdomains (e.g., `fukuri.yogu.one`, `enkoda.yogu.one`, `shouhizei.yogu.one`, `tokun.yogu.one`, `konbata.yogu.one`). The project prioritizes simplicity, performance, and accessibility.
 
 ## Tech Stack
 ### Core Technologies (Mandatory)
@@ -36,7 +36,8 @@ yogu-one/
 │           ├── fukuri.png
 │           ├── enkoda.png
 │           ├── shouhizei.png
-│           └── tokun.png
+│           ├── tokun.png
+│           └── konbata.png
 ├── AGENTS.md              # Project guidelines for AI agents
 ├── LICENSE                # GPL v3 Licence
 ├── Makefile               # Task automation
@@ -92,6 +93,11 @@ yogu-one/
 - Deno is the required dev environment.
 
 ## Changelog
+### v1.2 (2026-03-06)
+- Added `Konbata` application to landing page and `README.md`.
+- Synchronised `index.html` with updated `apps.json`.
+- Added `konbata.png` icon and updated architectural overview.
+
 ### v1.1 (2026-03-05)
 - Added `apps.json` and `tokun.png` to architecture.
 - Included mode-specific instructions for agents.
@@ -103,6 +109,6 @@ yogu-one/
 - Defined tech stack (Pure HTML/CSS/JS) and architecture.
 
 ---
-**Last Updated**: 2026-03-05
+**Last Updated**: 2026-03-06
 **Document Owner**: Project Team
 **Review Frequency**: As needed based on project evolution
