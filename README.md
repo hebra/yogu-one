@@ -13,7 +13,7 @@ Yogu.one is the primary landing page and central hub for the Yogu.one ecosystem.
 ### Financial Tools
 
 - **[Fukuri](https://fukuri.yogu.one)**: A clean and powerful compound interest calculator with regular contribution support and visual growth charts.
-- **[Shouhizei](https://shouhizei.yogu.one)**: A straightforward Japanese consumption tax (GST/VAT) calculator.
+- **[Shouhizei](https://shouhizei.yogu.one)**: An international consumption tax (GST/VAT) calculator.
 
 ## Architecture
 
